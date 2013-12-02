@@ -1,5 +1,4 @@
 var express = require('express'),
-  mongoStore = require('connect-mongo')(express),
   pkg = require('../package.json');
 
 module.exports = function (app, config, passport) {
@@ -39,25 +38,6 @@ module.exports = function (app, config, passport) {
     // bodyParser should be above methodOverride
     app.use(express.bodyParser());
     app.use(express.methodOverride());
-
-    // express/mongo session storage
-    app.use(express.session({
-      secret: config.secret,
-      store: new mongoStore({
-        url: config.db,
-        collection : 'sessions'
-      })
-    }));
-
-    // adds CSRF support
-    if (process.env.NODE_ENV !== 'test') {
-      app.use(express.csrf());
-
-      app.use(function(req, res, next){
-        res.locals.csrf_token = req.csrfToken();
-        next();
-      });
-    }
 
     // routes should be at the last
     app.use(app.router);
