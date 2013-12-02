@@ -1,3 +1,7 @@
+// Start Profiler
+require('./libs/profile');
+
+// Module dependencies.
 var request = require('request'),
   cheerio = require('cheerio'),
   mongoose = require('mongoose'),

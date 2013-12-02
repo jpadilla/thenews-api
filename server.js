@@ -1,7 +1,7 @@
-/**
- * Module dependencies.
- */
+// Start Profiler
+require('./libs/profile');
 
+// Module dependencies.
 var express = require('express'),
   fs = require('fs');
 

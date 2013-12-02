@@ -15,6 +15,7 @@
     "express": "~3.4.5",
     "hbs": "~2.4.0",
     "connect-mongo": "~0.4.0",
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "nodetime": "~0.8.14"
   }
 }
