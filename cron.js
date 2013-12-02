@@ -1,5 +1,5 @@
 // Start Profiler
-require('./libs/profile');
+require('./lib/profile');
 
 // Module dependencies.
 var request = require('request'),
