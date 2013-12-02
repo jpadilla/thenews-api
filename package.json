@@ -1,0 +1,20 @@
+{
+  "name": "thenews-scraper",
+  "version": "0.0.0",
+  "description": "Scraper for thenews.im",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "José Padilla",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.27.0",
+    "cheerio": "~0.12.4",
+    "mongoose": "~3.8.1",
+    "express": "~3.4.5",
+    "hbs": "~2.4.0",
+    "connect-mongo": "~0.4.0",
+    "async": "~0.2.9"
+  }
+}
