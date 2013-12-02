@@ -9,5 +9,9 @@ module.exports = {
     db: 'mongodb://localhost/thenews-scraper',
     root: rootPath
   },
-  production: {}
+  production: {
+    secret: process.env.SECRET_KEY,
+    db: process.env.MONGOHQ_URL,
+    root: rootPath
+  }
 }[env];
