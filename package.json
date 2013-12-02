@@ -1,7 +1,7 @@
 {
-  "name": "thenews-scraper",
-  "version": "0.0.0",
-  "description": "Scraper for thenews.im",
+  "name": "thenews-api",
+  "version": "0.0.1",
+  "description": "Scraper and Web API for thenews.im",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

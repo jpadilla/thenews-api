@@ -6,7 +6,7 @@ var env = process.env.NODE_ENV || 'development',
 module.exports = {
   development: {
     secret: 'abc123',
-    db: 'mongodb://localhost/thenews-scraper',
+    db: 'mongodb://localhost/thenews-api',
     root: rootPath
   },
   production: {
